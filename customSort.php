@@ -1,31 +1,38 @@
 <?php
 
 
-$array = [10, 3, 7, 5, 1];
+$tab = [10, 3, 7, 5, 1];
 
-$sorted = false;
 
-$size = count($array);
 
-while(!$sorted)
-{
-    $sorted = true;
+function customSort($array) {
+    $sorted = false;
 
-    for($i = 0 ; $i < $size - 1 ; $i++)
+    $size = count($array);
+
+    while(!$sorted)
     {
-        if($array[$i] > $array[$i + 1])
+        $sorted = true;
+
+        for($i = 0 ; $i < $size - 1 ; $i++)
         {
-            $tmp = $array[$i];
+            if($array[$i] > $array[$i + 1])
+            {
+                $tmp = $array[$i];
 
-            $array[$i] = $array[$i + 1];
-            $array[$i + 1] = $tmp;
+                $array[$i] = $array[$i + 1];
+                $array[$i + 1] = $tmp;
 
-            $sorted = false;
+                $sorted = false;
+            }
         }
+
+        $size--;
     }
 
-    $size--;
+    return $array;
 }
 
-var_dump($array);
+var_dump(customSort($tab));
+var_dump(customSort([7, 9, 4, 2]));
 
