@@ -4,7 +4,7 @@
 
 
 
-  require 'heros.php';
+  require 'heros/heros.php';
   require 'heros/chevalier.php';
   require 'heros/bucheron.php';
 
@@ -19,12 +19,12 @@
 
   $chevalier = new chevalier();
   $chevalier->setrole('chevalier');
-  $chevalier->setarme('épée');
+  $chevalier->setarme('epee');
     var_dump($chevalier->display("Chevalier"));
 
   $chevalier = new chevalier();
   $chevalier->setrole('chevalier');
-  $chevalier->setarme('épée');
+  $chevalier->setarme('epee');
     var_dump($chevalier->display("Chevalier"));
 
 

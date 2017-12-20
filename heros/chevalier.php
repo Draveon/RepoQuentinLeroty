@@ -6,12 +6,6 @@ class Chevalier extends Personnage {
   private $arme;
 
 
-    public function display($name = null):array {
-        $caract = parent::display();
-        $caract["name"] = $name;
-        $caract["pv"] = $pv;
-        return $caract;
-
 public function getrole() {
   return $this->role;
 }
