@@ -2,7 +2,7 @@
 
 class Personnage {
   private $name;
-  private $pv;
+  private $pv = 100;
   private $arme;
 
 

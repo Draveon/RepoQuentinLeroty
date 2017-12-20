@@ -9,14 +9,12 @@
   require 'heros/bucheron.php';
 
   $Personnage = new Personnage();
-  $Personnage->setname('Heros1')
-  $Personnage->setpv(100);
-    var_dump($Personnage->display('Heros1'))
+  $Personnage->setname('Heros1');
+    var_dump($Personnage->display('Heros1'));
 
     $Personnage = new Personnage();
-    $Personnage->setname('Heros2')
-    $Personnage->setpv(100);
-      var_dump($Personnage->display('Heros2'))
+    $Personnage->setname('Heros2');
+      var_dump($Personnage->display('Heros2'));
 
 
   $chevalier = new chevalier();
