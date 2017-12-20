@@ -10,6 +10,7 @@ class Bucheron extends Personnage {
   public function display($name = null):array {
       $caract = parent::display();
       $caract["name"] = $name;
+      $caract["pv"] = $pv;
       return $caract;
 
 
