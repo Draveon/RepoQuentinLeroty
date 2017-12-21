@@ -1,35 +1,13 @@
 <?php
 
-class Chevalier extends Personnage {
-  private $role;
-  private $pv;
-  private $arme;
+class Chevalier extends Hero
+{
+
+    public function __construct() {
+        $this->attaque = 5;
+        $this->defence = 8;
 
 
-public function getrole() {
-  return $this->role;
+    }
 }
-public function setrole() {
-  $this->role = $role;
-}
-
-public function getpv() {
-  return $this->pv;
-}
-public function setpv() {
-  $this->pv = $pv;
-}
-
-public function getarme() {
-  return $this->arme;
-}
-public function setarme() {
-  $this->arme = $arme;
-}
-
-public function display():string {
-      return "le" . $this->role . "possède une " . $this->arme .".";
-}
-}
-
  ?>
