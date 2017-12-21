@@ -1,15 +1,15 @@
 
 
   <?php
-  require 'Hero.php';
-  require 'Viking.php';
-  require 'Chevalier.php';
-  require 'Combat.php';
+  require 'hero.php';
+  require 'bucheron.php';
+  require 'chevalier.php';
+  require 'combat.php';
   $combat = new Combat();
-  $viking = new Viking();
+  $viking = new Bucheron();
   $viking->setName("Boby");
   $viking->setArme("Hache");
-  $combat->addJoueurs($viking);
+  $combat->addJoueurs($bucheron);
   $chevalier = new Chevalier();
   $chevalier->setName("Jack");
   $chevalier->setArme("epee");
